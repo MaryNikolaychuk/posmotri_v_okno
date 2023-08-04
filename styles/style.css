@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -35,4 +35,261 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  align-self: center;
+  max-width: 1140px;
+}
+
+.result {
+  margin-bottom: 2px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.content__list {
+  height: 294px;
+  overflow-y: auto;
+  position: relative;
+  scrollbar-width: none;
+}
+
+.content__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.content__details {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  padding-bottom: 30px;
+  font-size: 75px;
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.94em;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: default;
+}
+
+.search-form__label {
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.search-form__textfield {
+  appearance: none;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  border-style: solid none;
+  border-color: #fff;
+  border-width: 1px;
+  width: 225px;
+  color: inherit;
+  margin: 1px;
+}
+
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.search-form__label:has(:active) {
+  outline: none;
+}
+
+.search-form__textfield:active {
+  outline: 1px solid #fff;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  vertical-align: middle;
+  align-self: center;
+  position: relative;
+}
+
+.search-form__checkbox:active + .search-form__pseudo-checkbox::before,
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  inset: 10%;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  cursor: pointer;
+}
+
+.content__list-item {
+  padding-bottom: 30px;
+}
+
+.content__list-item:last-of-type {
+  padding-bottom: 0;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin: 1px;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  border: 1px solid #fff;
+}
+
+.content__card-link_current:focus {
+  outline: 1px solid #fff;
+}
+
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+}
+
+.content__video-card-description {
+  line-height: 0.9em;
+}
+
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 18px;
+  padding: 6px 0;
+}
+
+.button:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  padding: 6px 70px;
+  align-self: end;
+}
+
+.more-button {
+  width: calc(100% - 4px);
+  margin: 2px;
 }
