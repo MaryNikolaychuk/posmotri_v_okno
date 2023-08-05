@@ -61,7 +61,8 @@ ol {
 }
 
 .content__list {
-  height: 294px;
+  height: 299px;
+  width: 399px;
   overflow-y: auto;
   position: relative;
   scrollbar-width: none;
@@ -77,10 +78,9 @@ ol {
 }
 
 .title {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   font-size: 75px;
   font-family: Oswald, sans-serif;
-  font-size: 75px;
   font-style: normal;
   font-weight: 700;
   line-height: 0.94em;
@@ -93,14 +93,13 @@ ol {
 
 .result__video-container {
   width: 711px;
-  height: 386px;
-  margin-bottom: 15px;
   position: relative;
 }
 
 .result__video {
   width: 100%;
-  height: 100%;
+  height: 386px;
+  object-fit: cover;
 }
 
 .visually-hidden {
@@ -111,6 +110,10 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+.search-form {
+  padding-top: 16px;
 }
 
 .search-form__fieldset {
@@ -248,6 +251,7 @@ ol {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
+  line-height: 1em;
   text-transform: uppercase;
   padding-bottom: 6px;
 }
